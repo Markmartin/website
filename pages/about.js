@@ -14,10 +14,10 @@ export default function About() {
         </Head>
         <main>
           <div className={styles.banner}>
-            <label className={styles['banner-title']}>
+            <label className={classNames(`${styles['banner-title']}`, 'animate__animated', 'animate__flipInX')}>
               <span className={styles['banner-title-annotate']}>关于</span>我们
             </label>
-            <label className={styles['banner-text']}>
+            <label className={classNames(`${styles['banner-text']}`, 'animate__animated', 'animate__flipInX')}>
               利用前端技术、高端服务、互联网化运营提升传统政务、企业级出行服务
             </label>
           </div>

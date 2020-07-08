@@ -1,5 +1,6 @@
 import '../styles/global.scss'
-import '../styles/hover-min.css'
+import 'hover.css'
+import 'animate.css'
 
 export default function App({ Component, pageProps }) {
   return <Component {...pageProps} />

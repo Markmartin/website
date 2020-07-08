@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Layout from '../components/layout/layout'
-
+import classNames from 'classnames'
 import styles from '../styles/travel.module.scss'
 
 export default function Home() {
@@ -13,7 +13,10 @@ export default function Home() {
         </Head>
         <main>
           <div className={styles.banner}>
-            <img className={styles['banner-logo']} src="/images/travel/banner-travel-logo.png"></img>
+            <img
+              className={classNames(`${styles['banner-logo']}`, 'animate__animated', 'animate__pulse')}
+              src="/images/travel/banner-travel-logo.png"
+            ></img>
           </div>
 
           <div className={styles['banner-travel']}>

@@ -14,7 +14,10 @@ export default function Service() {
         </Head>
         <main>
           <div className={styles.banner}>
-            <img className={styles['banner-logo']} src="/images/service/banner-service-logo.png"></img>
+            <img
+              className={classNames(`${styles['banner-logo']}`, 'animate__animated', 'animate__lightSpeedInRight')}
+              src="/images/service/banner-service-logo.png"
+            ></img>
           </div>
 
           <div className={styles['service-type']}>

@@ -4,10 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "next start -p 80"
+    "build": "next build && next export",
+    "start": "next start -p 80",
+    "export": "next export"
   },
   "dependencies": {
+    "animate.css": "^4.1.0",
     "classnames": "^2.2.6",
     "hover.css": "^2.3.2",
     "next": "9.4.4",

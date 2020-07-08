@@ -56,8 +56,21 @@ export default function Layout({ children, pageName }) {
       <footer className={styles.footer}>
         <div className={styles['footer-contact']}>
           <div className={styles['footer-contact-left']}>
-            <a className={classNames(footerItem, `${styles['contact-item']}`)}>关于我们</a>
-            <a className={classNames(footerItem, `${styles['contact-item']}`)}>服务中心</a>
+            <Link href="/about">
+              <label className={classNames(footerItem, `${styles['contact-item']}`)}>关于我们</label>
+            </Link>
+            <Link href="/service">
+              <label className={classNames(footerItem, `${styles['contact-item']}`)}>服务中心</label>
+            </Link>
+            <Link href="/">
+              <label className={classNames(footerItem, `${styles['contact-item']}`)}>风驰出行</label>
+            </Link>
+            {/* <Link href="/about">
+              <label className={classNames(footerItem, `${styles['contact-item']}`)}>关于我们</label>
+            </Link>
+            <Link href="/service">
+              <label className={classNames(footerItem, `${styles['contact-item']}`)}>服务中心</label>
+            </Link> */}
           </div>
           <div className={styles['footer-contact-right']}>
             <img className={classNames(`${styles['wechat-code']}`, footerItem)} src="/images/wechat-code.png"></img>
