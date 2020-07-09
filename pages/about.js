@@ -14,10 +14,10 @@ export default function About() {
         </Head>
         <main>
           <div className={styles.banner}>
-            <label className={classNames(`${styles['banner-title']}`, 'animate__animated', 'animate__flipInX')}>
+            <label className={classNames(styles['banner-title'], 'animate__animated', 'animate__flipInX')}>
               <span className={styles['banner-title-annotate']}>关于</span>我们
             </label>
-            <label className={classNames(`${styles['banner-text']}`, 'animate__animated', 'animate__flipInX')}>
+            <label className={classNames(styles['banner-text'], 'animate__animated', 'animate__flipInX')}>
               利用前端技术、高端服务、互联网化运营提升传统政务、企业级出行服务
             </label>
           </div>
@@ -35,16 +35,13 @@ export default function About() {
                 </label>
               </div>
               <img
-                className={classNames(`${styles['introduction-img']}`, aboutItem)}
+                className={classNames(styles['introduction-img'], aboutItem)}
                 src="/images/about/about-introduction.jpg"
               ></img>
             </div>
 
             <div className={styles['vision']}>
-              <img
-                className={classNames(`${styles['vision-img']}`, aboutItem)}
-                src="/images/about/about-vision.jpg"
-              ></img>
+              <img className={classNames(styles['vision-img'], aboutItem)} src="/images/about/about-vision.jpg"></img>
               <div className={styles['vision-content']}>
                 <label className={styles['about-title']}>公司愿景</label>
                 <div className={styles['line']}></div>

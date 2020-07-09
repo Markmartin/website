@@ -4,6 +4,7 @@ import classNames from 'classnames'
 import styles from '../styles/travel.module.scss'
 
 export default function Home() {
+  const aboutItem = 'hvr-grow'
   return (
     <Layout pageName="travel">
       <div className={styles.travel}>
@@ -14,14 +15,17 @@ export default function Home() {
         <main>
           <div className={styles.banner}>
             <img
-              className={classNames(`${styles['banner-logo']}`, 'animate__animated', 'animate__pulse')}
+              className={classNames(styles['banner-logo'], 'animate__animated', 'animate__pulse')}
               src="/images/travel/banner-travel-logo.png"
             ></img>
           </div>
 
           <div className={styles['banner-travel']}>
             <div className={styles['banner-travel-left']}>
-              <img className={styles['banner-travel-car']} src="/images/travel/banner-travel-car.png"></img>
+              <img
+                className={classNames(styles['banner-travel-car'], aboutItem)}
+                src="/images/travel/banner-travel-car.png"
+              ></img>
             </div>
             <div className={styles['banner-travel-right']}>
               <label className={styles['banner-travel-desc']}>
