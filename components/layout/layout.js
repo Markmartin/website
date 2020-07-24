@@ -62,18 +62,20 @@ export default function Layout({ children, pageName }) {
             <Link href="/service">
               <label className={classNames(footerItem, `${styles['contact-item']}`)}>服务中心</label>
             </Link>
-            <Link href="/">
-              <label className={classNames(footerItem, `${styles['contact-item']}`)}>风驰出行</label>
-            </Link>
-            {/* <Link href="/about">
-              <label className={classNames(footerItem, `${styles['contact-item']}`)}>关于我们</label>
-            </Link>
-            <Link href="/service">
-              <label className={classNames(footerItem, `${styles['contact-item']}`)}>服务中心</label>
-            </Link> */}
           </div>
           <div className={styles['footer-contact-right']}>
-            <img className={classNames(`${styles['wechat-code']}`, footerItem)} src="/images/wechat-code.png"></img>
+            <div className={styles['qrcode-container']}>
+              <img className={classNames(`${styles['qrcode']}`, footerItem)} src="/images/passenger-code.png"></img>
+              <label className={styles['qrcode-text']}>下载乘客端app</label>
+            </div>
+            <div className={styles['qrcode-container']}>
+              <img className={classNames(`${styles['qrcode']}`, footerItem)} src="/images/driver-code.png"></img>
+              <label className={styles['qrcode-text']}>下载司机端app</label>
+            </div>
+            <div className={styles['qrcode-container']}>
+              <img className={classNames(`${styles['qrcode']}`, footerItem)} src="/images/wechat-code.png"></img>
+              <label className={styles['qrcode-text']}>关注风驰公众号</label>
+            </div>
             <div className={styles['contact-container']}>
               <label className={styles['contact-item']}>电话：0793-8213368</label>
               <label className={styles['contact-item']}>网址：www.fengchi-tech.com</label>
